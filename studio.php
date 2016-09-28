@@ -4,7 +4,7 @@
  *
  * Plugin Name: Common - Studio CPT
  * Description: Wordpress Plugin for Studio Custom Post Type to be used on applicable UCF College of Arts and Humanities websites
- * Author: Austin Tindle
+ * Author: Austin Tindle + Alessandro Vecchi
  *
  */
 
@@ -96,10 +96,8 @@ function studio_meta_resources() {
 function studio_save() {
 	global $post;
 
-	update_post_meta($post->ID, "dept", $_POST["dept"]);
-	update_post_meta($post->ID, "subdept", $_POST["subdept"]);
-	update_post_meta($post->ID, "newstags", $_POST["newstags"]);
-	update_post_meta($post->ID, "eventtags", $_POST["eventtags"]);
+	update_post_meta($post->ID, "twitter", $_POST["twitter"]);
+	update_post_meta($post->ID, "instagram", $_POST["instagram"]);
 	update_post_meta($post->ID, "type", $_POST["type"]);
 	update_post_meta($post->ID, "description", $_POST["description"]);
 	update_post_meta($post->ID, "media", $_POST["media"]);
