@@ -1,0 +1,11 @@
+.inner-meta {
+	margin: 10px 0;
+}
+
+.inner-meta input, label, span {
+	margin: 5px 10px 5px 0;
+}
+
+.inner-meta input[type='text'] {
+	min-width: 400px;
+}
